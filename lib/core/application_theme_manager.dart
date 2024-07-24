@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 
 class ApplicationThemeManager {
+  static const Color primaryColor = Color(0xFFB7935F);
   static ThemeData lightThemeData = ThemeData(
+    primaryColor: primaryColor,
     scaffoldBackgroundColor: Colors.transparent,
     appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.transparent,
-        titleTextStyle: TextStyle(
-            fontFamily: "El Messiri",
-            fontSize: 30,
-            color: Colors.black,
-            fontWeight: FontWeight.bold)),
+      backgroundColor: Colors.transparent,
+      titleTextStyle: TextStyle(
+        fontFamily: "El Messiri",
+        fontSize: 30,
+        color: Colors.black,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Color(0xFFB7935F),
+      backgroundColor: primaryColor,
       selectedItemColor: Color(0xFF222222),
       selectedIconTheme: IconThemeData(
         size: 35,
@@ -65,5 +69,9 @@ class ApplicationThemeManager {
         fontWeight: FontWeight.w400,
       ),
     ),
+    dividerTheme: const DividerThemeData(
+      color: primaryColor,
+    ),
+
   );
 }
