@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app_c11_sun_4pm/core/application_theme_manager.dart';
 import 'package:islami_app_c11_sun_4pm/layout/layout_view.dart';
+import 'package:islami_app_c11_sun_4pm/modules/hadeth/hadeth_view.dart';
+import 'package:islami_app_c11_sun_4pm/modules/hadeth/hadith_details_view.dart';
 import 'package:islami_app_c11_sun_4pm/modules/quran/quran_details_view.dart';
 import 'package:islami_app_c11_sun_4pm/modules/splash/splash_view.dart';
 
@@ -11,6 +13,7 @@ import 'package:islami_app_c11_sun_4pm/modules/splash/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +30,8 @@ class MyApp extends StatelessWidget {
       routes: {
         SplashView.routeName: (context) => const SplashView(),
         LayOutView.routeName: (context) => const LayOutView(),
-        QuranDetailsView.routeName: (context) =>  QuranDetailsView(),
+        QuranDetailsView.routeName: (context) =>  const QuranDetailsView(),
+        HadithDetailsView.routeName: (context) =>  const HadithDetailsView(),
       },
     );
   }

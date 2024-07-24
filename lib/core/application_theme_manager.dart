@@ -71,6 +71,7 @@ class ApplicationThemeManager {
     ),
     dividerTheme: const DividerThemeData(
       color: primaryColor,
+      space: 10,
     ),
 
   );
